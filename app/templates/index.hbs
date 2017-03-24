@@ -1,9 +1,18 @@
 <h1>Index page</h1>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
      {{question-tile question=question}}
   {{/each}}
 </ul>
 
 {{new-question saveQuestion="saveQuestion"}}
+
+
+<h2> All Answers </h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+</ul>
