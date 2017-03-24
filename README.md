@@ -1,7 +1,7 @@
-# qand-a
+# QandA
+## By: Keely Silva-Glenn
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app allows users to enter the questions they have regarding extraterrestrial. It is the leading web application for learning about species outside our atmosphere!
 
 ## Prerequisites
 
@@ -50,3 +50,31 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+## Technologies Used
+
+* HTML
+* Bootstrap
+* CSS
+* NODE
+* Javascript
+* Ember
+
+## Specs
+#### The user can submit a question and see the questions on the homepage
+* Input: "What are aliens?"
+* Output: List of questions
+
+#### The other users can submit answers to questions
+* Input: "What are aliens?"
+* Output: "They are not humans, duh"
+
+#### The users can click on a question and it will take them to the question page
+* Input: "What are aliens?"
+* Output: "They are not humans, duh"
+
+## Legal
+MIT License
+
+Copyright (c) 2017 Keely Silva-Glenn
