@@ -1,23 +1,29 @@
 {{#if addNewQuestion}}
-  <h1>New Question</h1>
-  <div>
+  <div class= "question-form">
+    <h3>New Question</h3>
     <form>
-      <div class="form-group">
-        <label for="question">Question</label>
-        {{input value=q id="q"}}
+      <div class="form-group row">
+        <label class="col-md-2 col-form-label" for="question">Question</label>
+        <div class="col-md-10">
+          {{input value=q id="q"}}
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author"}}
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="author">Author</label>
+        <div class="col-md-10">
+            {{input value=author id="author"}}
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="notes">Notes</label>
-        {{input value=notes id="notes"}}
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="notes">Notes</label>
+        <div class="col-sm-10">
+            {{input value=notes id="notes"}}
+        </div>
       </div>
 
-      <button {{action 'saveQuestion'}}>Save</button>
+      <button type="button" class="btn btn-secondary" {{action 'saveQuestion'}}>Save</button>
     </form>
   </div>
 {{else}}

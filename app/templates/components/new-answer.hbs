@@ -1,19 +1,19 @@
 {{#if addNewAnswer}}
-<h1>New Answer</h1>
-  <div>
+  <div class= "question-form">
+    <h1>New Answer</h1>
     <form>
-      <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author"}}
+      <div class="form-group row">
+      <label class="col-md-2 col-form-label" for="author">Author</label>
+        <div class="col-md-10">{{input value=author id="author"}}</div>
       </div>
 
-      <div class="form-group">
-        <label for="content">Content</label>
-        {{input value=content id="content"}}
+      <div class="form-group row">
+        <label class="col-md-2 col-form-label" for="content">Content</label>
+        <div class="col-md-10">{{input value=content id="content"}}</div>
       </div>
-      <button {{action 'saveAnswer'}}>Save</button>
+      <button type="button" class="btn btn-secondary" {{action 'saveAnswer'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'answerFormShow'}}>New Answer</button>
+  <button type="button" class="btn btn-secondary btn-lg" {{action 'answerFormShow'}}>New Answer</button>
 {{/if}}

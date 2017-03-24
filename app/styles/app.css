@@ -48,3 +48,29 @@
 .body {
   margin-top: 100px;
 }
+
+.questions a:link {
+    color: black;
+}
+
+.questions a:visited {
+    color: black;
+}
+
+.questions a:hover {
+    color: black;
+}
+
+.questions a:active {
+    color: black;
+}
+
+
+/*forms*/
+
+.question-form{
+  background-color: rgb(224, 226, 229);
+  padding: 10px;
+  border-radius: 2%;
+  margin: 60px;
+}

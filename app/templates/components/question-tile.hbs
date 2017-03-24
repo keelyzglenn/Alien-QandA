@@ -1,10 +1,11 @@
  <div>
-   {{#link-to 'question' question.id}}
+
    <div class="panel panel-default">
      <div class="panel-body">
-       <p>{{question.q}}</p>
+       {{#link-to 'question' question.id}}<h4>{{question.q}}</h4>{{/link-to}}
+       <hr />
        <p>Submitted by: {{question.author}}</p>
     </div>
    </div>
-   {{/link-to}}
+
  </div>
