@@ -1,13 +1,13 @@
 { "questions": [{
-    "question": "Do aliens exist?",
+    "q": "Do aliens exist?",
     "author": "James Franco",
     "notes": "They have to right?"
   }, {
-    "question": "What proof is there that aliens visited the Mayans?",
+    "q": "What proof is there that aliens visited the Mayans?",
     "author": "Jimmy Falon",
     "notes": "I watched a late night show about it once."
   }, {
-    "question": "If aliens existed would they believe in socialism?",
+    "q": "If aliens existed would they believe in socialism?",
     "author": "Bernie Sanders",
     "notes": "Distribution of wealth is a belief that has got to be held by more advanced civilizations."
   }]
