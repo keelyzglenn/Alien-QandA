@@ -1,2 +1,10 @@
  <div>{{question.q}} {{question.author}} {{question.notes}}</div>
 <button {{action 'delete' question}}>Delete</button>
+
+
+<h2> Answers </h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
