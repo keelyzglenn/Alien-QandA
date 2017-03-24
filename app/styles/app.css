@@ -1,4 +1,17 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("/assests/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat
+  height: 100%;
+}
+
 /*navbar*/
+
+.navbar {
+  background-color: white;
+  height: 80px;
+}
 .navbar-brand {
   padding-left: 100px;
   font-family: 'Orbitron', sans-serif;
@@ -34,6 +47,7 @@
 /*sidepanels*/
 .side-panel {
   margin-top: 80px;
+  color: white;
 }
 
 .side-panel img {
@@ -42,6 +56,22 @@
 
 .article {
   margin-top: 20px;
+}
+
+.side-panel a:link {
+    color: white;
+}
+
+.side-panel a:visited {
+    color: white;
+}
+
+.side-panel a:hover {
+    color: white;
+}
+
+.side-panel a:active {
+    color: white;
 }
 
 /*questions */
@@ -73,4 +103,28 @@
   padding: 10px;
   border-radius: 2%;
   margin: 60px;
+}
+
+
+/*questions*/
+
+.content {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.panel-heading {
+  text-align: center;
+}
+
+.author {
+  text-align: right;
+}
+
+.body-question {
+  margin: 50px;
+  margin-top: 100px;
+}
+
+.buttons {
+  text-align: center;
 }

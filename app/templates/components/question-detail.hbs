@@ -1,10 +1,22 @@
- <div>{{question.q}} {{question.author}} {{question.notes}}</div>
-<button {{action 'delete' question}}>Delete</button>
+ <div> </div>
 
 
-<h2> Answers </h2>
-<ul>
-  {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>{{question.q}}</h2>
+    <p class= "author"><button type="button" class="btn btn-secondary" {{action 'delete' question}}>Delete</button></p>
+  </div>
+  <div class="panel-body">
+    <p>Notes:</p>
+    <div class="content"><h4>{{question.notes}}</h4></div>
+    <p class="author">Submitted by: {{question.author}}</p>
+  </div>
+  <div class="panel-footer">
+    <p>Answers:</p>
+    <div>
+      {{#each question.answers as |answer|}}
+        {{answer-tile answer=answer}}
+      {{/each}}
+    </div>
+  </div>
+</div>

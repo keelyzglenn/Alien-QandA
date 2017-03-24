@@ -1,4 +1,13 @@
-<h2>More information about {{model.q}}'s {{model.author}}:</h2>
-{{update-question question=model update="update"}}
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
-{{new-answer saveAnswer="saveAnswer" question=model}}
+<div class="body-question">
+  {{question-detail question=model destroyQuestion="destroyQuestion"}}
+
+  <div class="buttons">
+    <div class="col-md-6">
+      {{update-question question=model update="update"}}
+    </div>
+    <div class="col-md-6">
+      {{new-answer saveAnswer="saveAnswer" question=model}}
+    </div>
+  </div>
+
+</div>
