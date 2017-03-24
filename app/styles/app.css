@@ -1,0 +1,50 @@
+/*navbar*/
+.navbar-brand {
+  padding-left: 100px;
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  font: black;
+}
+
+
+.nav-icons {
+  margin-left: 30px;
+}
+
+#brand-logo {
+  font-family: 'Orbitron', sans-serif;
+  padding-left: 0px;
+  padding-top: 30px;
+}
+
+#brand-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+}
+
+#brand-image {
+  margin-top: -10px;
+}
+
+
+/*index*/
+
+/*sidepanels*/
+.side-panel {
+  margin-top: 80px;
+}
+
+.side-panel img {
+  width: 300px;
+}
+
+.article {
+  margin-top: 20px;
+}
+
+/*questions */
+.body {
+  margin-top: 100px;
+}

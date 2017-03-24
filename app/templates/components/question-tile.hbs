@@ -1,1 +1,10 @@
- <div>{{#link-to 'question' question.id}}{{question.q}} by {{question.author}}{{/link-to}}</div>
+ <div>
+   {{#link-to 'question' question.id}}
+   <div class="panel panel-default">
+     <div class="panel-body">
+       <p>{{question.q}}</p>
+       <p>Submitted by: {{question.author}}</p>
+    </div>
+   </div>
+   {{/link-to}}
+ </div>

@@ -1,9 +1,30 @@
-<h1>Index page</h1>
 
-<ul>
-  {{#each model.questions as |question|}}
-     {{question-tile question=question}}
-  {{/each}}
-</ul>
+<div class="row">
+  <div class="side-panel col-md-4">
+    <h3>Featured Articles</h3>
+    <div class="row article">
+      <a href="#"><h5>Latest UFO sighting in LA</h5></a>
+      <img src="assests/images/ufosight.gif" alt="" />
+    </div>
+    <div class="row article">
+      <a href="http://www.webelieveinaliens.com/extraterrestrials-and-ancient-tomb-writings/"><h5>Extraterrestrials and Ancient Tomb Writings</h5></a>
+      <img src="assests/images/ancient-astronout-theory.jpg" alt="" />
+    </div>
+  </div>
 
-{{new-question saveQuestion="saveQuestion"}}
+
+  <div class="body col-md-8">
+    <p>
+      {{new-question saveQuestion="saveQuestion"}}
+    </p>
+
+
+    <div class="questions">
+      {{#each model.questions as |question|}}
+      {{question-tile question=question}}
+      {{/each}}
+    </div>
+  </div>
+
+
+</div>
